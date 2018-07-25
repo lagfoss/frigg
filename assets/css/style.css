@@ -54,7 +54,7 @@ nav {
   z-index: 1;
 }
 
-nav a {
+nav a, input.search {
   font-family: ForgottenUncial;
   display: block;
   color: #990000;
@@ -80,6 +80,14 @@ nav .icon {
 nav a:hover {
   color: #009999;
 }
+
+input.search {
+  display: inline-block;
+  border: 1px solid #990000;
+  box-sizing: border-box;
+  width: 10%;
+  text-align: left;
+  }
 
 main {
   padding-top: 20px;
@@ -153,11 +161,11 @@ footer a{
    border: none;
  }
 
+ nav input.search { display: none;}
+
  /* Burger menu bliver synlig */
  nav a.icon {
-   position: sticky;
-   top: 0;
-   right: 0;
+   position: relative;
    margin-top: auto;
    font-size: 40px;
    display: block;
@@ -167,26 +175,29 @@ footer a{
  background-color: #ffffff;}
 
  nav.responsive .icon {
-   position:relative;
-   right: 0;
-   padding: 10px;
-   display: block;
+   position: relative;
+   margin-top: auto;
    font-size: 40px;
+   display: block;
+   width: 100%;
  }
 
- nav.responsive a {
+ nav.responsive a, nav.responsive input.search {
    float: none;
+   text-align: left;
    display: block;
-   text-align: right;
    font-size: 16px;
    margin: auto auto 20px auto;
    z-index: 2;
  }
 
+nav.responsive input.search{
+  width: 20%;
+}
+
  nav.responsive {
    display: block;
    position: relative;
-   right: 0;
-   width: 100%;
+
  }
 }
