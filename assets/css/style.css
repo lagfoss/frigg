@@ -30,7 +30,6 @@ header {
   justify-content: flex-start;
   height: auto;
   background-color: #ffffff;
-  box-shadow:2px 4px 8px #990000;
   right: 0;
   left: 0;
   top: 0;
@@ -38,9 +37,9 @@ header {
 
 .logo {
   height: auto;
-  max-width: 100px;
+  width: 15%;
   margin-left: 10px;
-  padding: 5px;
+  padding: 5px 5px 20px 5px;
   z-index: 2;
 }
 
@@ -49,6 +48,7 @@ nav {
   display: flex;
   justify-content: center;
   position: sticky;
+  box-shadow:2px 4px 8px #990000;
   width: 100%;
   top: 0;
   z-index: 1;
@@ -89,22 +89,40 @@ input.search {
   text-align: left;
   }
 
-main {
-  padding-top: 20px;
+  main {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto auto auto;
+    width: 100%;
+  }
+
+aside {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  margin: 50px auto auto auto;
-  background-color: #ffffff;
+  width: 15%;
+}
+
+.runestone {
+  background-image: url("../images/runesten.png");
+  margin: 0;
+  width: 100%;
+  min-height: 800px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .welcome{
-  margin: 100px auto auto auto;
+  margin: 50px auto auto auto;
   min-height: 600px;
   background-image: url("../images/index-baggrund.jpg");
   background-blend-mode: darken;
   background-position: center;
-  background-size: cover;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  width: 60%;
   }
 
 footer {
@@ -161,6 +179,10 @@ footer a{
    border: none;
  }
 
+ .logo {
+   width: 100px;
+ }
+
  nav input.search { display: none;}
 
  /* Burger menu bliver synlig */
@@ -184,7 +206,7 @@ footer a{
 
  nav.responsive a, nav.responsive input.search {
    float: none;
-   text-align: left;
+   text-align: center;
    display: block;
    font-size: 16px;
    margin: auto auto 20px auto;
