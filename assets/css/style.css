@@ -32,7 +32,7 @@ p {
 }
 
 a {
-  font-family: 'Josefin Sans', sans-serif; 
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Header med logo og billede */
@@ -144,11 +144,6 @@ aside {
 /* Footer med kontaktoplysninger, logo og socialemedier */
 
 footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  margin: 30px auto 20px auto;
-  padding: 20px 20px 0 20px;
   font-size: 1.2vw;
   letter-spacing: 1.3pt;
   line-height: 24pt;
@@ -250,8 +245,19 @@ nav.responsive input.search{
     display: flex;
     flex-wrap: wrap;
     width: 80%;
+    min-height: 200px;
     margin: 0 auto;
   }
+
+footer {
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  margin: 30px auto 0 auto;
+  color: white;
+  text-align: center;
+}
 
   .footer_left,
   .footer_middle,
