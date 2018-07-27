@@ -51,7 +51,6 @@ header {
   width: 10%;
   height: auto;
   margin: 10px;
-  padding: 5px 5px 20px 5px;
   z-index: 2;
 }
 
@@ -59,8 +58,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  width: 60%;
-  padding: 5px 5px 20px 5px;
+  width: 90%;
+  padding: 5px 0 20px 0;
   z-index: 2;
 }
 
@@ -158,6 +157,7 @@ footer {
   line-height: 24pt;
   color: #fff;
   font-weight: 300;
+  min-height: 80px;
 }
 
 footer a{
@@ -165,32 +165,28 @@ footer a{
   color: #ffffff;
 }
 
-.footer_left {
-  display: inline-flex;
-  justify-content: flex-start;
-  width: 40%;
+/* Er blevet brugt til logo med copyright */
+.foot_logo {
+  width: 50%;
 }
 
-.footer_middle {
-  display: inline-flex;
-  justify-content: center;
-  width: 20%;
+.copyright {
+    position: relative;
+    text-align: center;
 }
 
-.footer_right {
-  display: inline-flex;
-  justify-content: flex-end;
-  width: 40%;
-}
-
-.socialmedier {
-  width: 200px;
+.txt_under {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Er blevet brugt til alle socialemedier i footer */
 .social{
-  width: 40px;
-  margin: 0px 20px 0 20px;
+  width: 21%;
+  height: auto;
+  margin: 0px 0px 0 20px;
   text-decoration: none;
 }
 
@@ -203,7 +199,13 @@ footer a{
  }
 
  .logo {
-   width: 100px;
+   width: 70px;
+   height: auto;
+ }
+
+ .header {
+   height: 70px;
+   width: auto;
  }
 
  nav input.search { display: none;}
@@ -214,6 +216,7 @@ footer a{
    margin-top: auto;
    font-size: 40px;
    display: block;
+   padding: 0;
  }
 
  nav.responsive {position: relative;
@@ -233,6 +236,7 @@ footer a{
    display: block;
    font-size: 16px;
    margin: auto auto 20px auto;
+   padding: 0;
    z-index: 2;
  }
 
@@ -253,35 +257,36 @@ nav.responsive input.search{
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    min-height: 200px;
+    width: 70%;
     margin: 0 auto;
   }
 
-footer {
-  left: 0;
-  bottom: 0;
+   footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      margin: 30px auto 00px auto;
 
-  width: 100%;
-  margin: 30px auto 0 auto;
-  color: white;
-  text-align: center;
-}
+   }
+
+  .socialmedier{
+    float: right;
+    width: 80%;
+    padding: 20px 0 0 0;
+ }
 
   .footer_left,
   .footer_middle,
   .footer_right{
     width: 32%;
-    height: 185px;
-    max-height: 185px;
-  }
 
-  .footer_right{
-    margin-left: 2%;
-  }
 
-  .footer_left{
-    margin-right: 2%;
-  }
+ }
+ .footer_left{
+   margin-right: 2%;
+ }
 
+ .footer_right{
+   margin-left: 2%;
+ }
 }
