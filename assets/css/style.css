@@ -27,6 +27,11 @@ h2 {
   font-family: ForgottenUncial
 }
 
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3vw;
+}
+
 p {
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -124,21 +129,27 @@ input.search {
 aside {
   display: flex;
   flex-wrap: wrap;
-  width: 15%;
+  width: 12%;
 }
 
 .runestone {
   background-image: url("../images/runesten.png");
-  margin: 0;
+  margin: 50px 5px 5px 5px;
   width: 100%;
   min-height: 800px;
-  background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
+.sponsor {
+  background-color: #ffffff;
+  margin: 50px 0 auto auto;
+  min-height: 600px;
+  text-align: center;
+}
+
 .welcome{
-  margin: 50px auto auto auto;
+  margin: 50px 0 auto 0;
   min-height: 600px;
   background-image: url("../images/index-baggrund.jpg");
   background-blend-mode: darken;
@@ -146,7 +157,14 @@ aside {
   background-size: 50%;
   background-repeat: no-repeat;
   background-color: #ffffff;
-  width: 60%;
+  width: 50%;
+  }
+
+  .facebook {
+    background-color: #ffffff;
+    margin: 50px auto auto 0;
+    min-height: 600px;
+    text-align: center;
   }
 
 /* Footer med kontaktoplysninger, logo og socialemedier */
