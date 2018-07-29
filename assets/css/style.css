@@ -40,6 +40,7 @@ h3 {
 
 p {
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3vw;
 }
 
 a {
@@ -152,6 +153,8 @@ aside {
   margin: 50px 0 auto auto;
   min-height: 600px;
   text-align: center;
+  border-right-width: 5px;
+  border-right: inset;
 }
 
 .welcome {
@@ -160,12 +163,8 @@ aside {
 
 .artikel {
   margin: 50px 0 auto 0;
+  padding: 0 10px 0 10px;
   min-height: 600px;
-  background-image: url("../images/index-baggrund.jpg");
-  background-blend-mode: darken;
-  background-position: center;
-  background-size: 50%;
-  background-repeat: no-repeat;
   background-color: #ffffff;
   width: 50%;
   }
@@ -175,12 +174,14 @@ aside {
     margin: 50px auto auto 0;
     min-height: 600px;
     text-align: center;
+    border-left-width: 5px;
+    border-left: outset;
   }
 
 /* Footer med kontaktoplysninger, logo og socialemedier */
 
 footer {
-  font-size: 1.2vw;
+  font-size: 10px;
   letter-spacing: 1.3pt;
   line-height: 24pt;
   color: #fff;
@@ -324,6 +325,25 @@ nav.responsive input.search{
 /* Tablet Styles */
 @media only screen and (min-width: 420px) and (max-width: 719px) {
 
+  /* Skrift typer til tablet*/
+    h1 {
+      font-size: 4.5vw;
+    }
+
+    h2 {
+      font-size: 3vw;
+    }
+
+    h3 {
+      font-size: 1.8vw;
+    }
+
+    p {
+      font-size: 1.8vw;
+    }
+
+
+
   .footer_left,
   .footer_middle,
   .footer_right{
@@ -332,6 +352,7 @@ nav.responsive input.search{
 
  .footer_left{
    order: 1;
+   padding-left: 20px;
  }
  .footer_middle{
    order: 3;
@@ -356,7 +377,11 @@ nav.responsive input.search{
     }
 
     h3 {
-      font-size: 2vw;
+      font-size: 2.2vw;
+    }
+
+    p {
+      font-size: 2.2vw;
     }
 }
 /* Mobile Styles slut */
