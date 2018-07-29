@@ -59,7 +59,6 @@ header {
 
 .logo {
   display: flex;
-  flex-wrap: wrap;
   width: 10%;
   height: auto;
   margin: 10px;
@@ -68,7 +67,6 @@ header {
 
 .header {
   display: flex;
-  flex-wrap: wrap;
   height: auto;
   width: 90%;
   padding: 5px 0 20px 0;
@@ -82,7 +80,7 @@ nav {
   display: flex;
   justify-content: center;
   position: sticky;
-  box-shadow:2px 4px 8px #990000;
+  box-shadow:0px 4px 8px #990000;
   width: 100%;
   top: 0;
   z-index: 1;
@@ -99,7 +97,7 @@ nav a, input.search {
   font-size: 1.3vw;
   font-weight: bold;
   letter-spacing: 1.2pt;
-  border-left: 2px solid #bbb;
+  border-left: 2px solid #000099;
   padding-left: 20px;
 }
 
@@ -117,9 +115,10 @@ nav a:hover {
 
 input.search {
   display: inline-block;
-  border: 1px solid #990000;
+  border: 1px solid #000099;
   box-sizing: border-box;
   width: 10%;
+  color: #990000;
   text-align: left;
   }
 
@@ -133,60 +132,75 @@ input.search {
     width: 100%;
   }
 
+  .welcome {
+    width: 100%;
+  }
+
 aside {
   display: flex;
   flex-wrap: wrap;
-  width: 12%;
 }
 
 .runestone {
   background-image: url("../images/runesten.png");
-  margin: 50px 5px 5px 5px;
-  width: 100%;
-  min-height: 800px;
+  margin: 40px auto 0 auto;
+  padding: 0;
+  width: 10%;
+  min-height: 500px;
   background-size: 100%;
   background-repeat: no-repeat;
+  background-clip: border-box;
 }
 
 .sponsor {
   background-color: #ffffff;
-  margin: 50px 0 auto auto;
-  min-height: 600px;
+  margin: 40px 0 auto 0;
+  width: 12%;
+  min-height: 500px;
   text-align: center;
-  border-right-width: 5px;
-  border-right: inset;
-}
-
-.welcome {
-  width: 100%;
+  border-right: thin inset #000099;
 }
 
 .artikel {
-  margin: 50px 0 auto 0;
+  margin: 40px 0 auto 0;
   padding: 0 10px 0 10px;
-  min-height: 600px;
+  min-height: 500px;
   background-color: #ffffff;
   width: 50%;
   }
 
   .facebook {
     background-color: #ffffff;
-    margin: 50px auto auto 0;
-    min-height: 600px;
+    margin: 40px 0 auto 0;
+    width: 12%;
+    min-height: 500px;
     text-align: center;
-    border-left-width: 5px;
-    border-left: outset;
+    border-left: thin outset #000099;
   }
 
 /* Footer med kontaktoplysninger, logo og socialemedier */
 
 footer {
-  font-size: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
   letter-spacing: 1.3pt;
   line-height: 24pt;
   color: #fff;
   font-weight: 300;
-  min-height: 80px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 10px auto 0px auto;
+  border: hidden;
+  box-shadow:0px -2px 4px #000099;
+}
+
+.indhold {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 0 auto;
 }
 
 footer a{
@@ -206,16 +220,21 @@ footer a{
 
 .txt_under {
     position: absolute;
-    top: 105%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.socialmedier{
+  width: 100%;
+}
+
 /* Er blevet brugt til alle socialemedier i footer */
 .social{
-  width: 21%;
+  width: 17%;
+  float: right;
   height: auto;
-  margin: 0px 0px 0 20px;
+  margin: 0px 20px 0 0;
   text-decoration: none;
 }
 
@@ -226,6 +245,11 @@ footer a{
    display: none;
    border: none;
  }
+
+header {
+  overflow: hidden;
+  width: 100%;
+}
 
  .logo {
    width: 70px;
@@ -283,35 +307,12 @@ nav.responsive input.search{
 /* Desktop Styles */
 @media only screen and (min-width: 720px) {
 
-  .indhold {
-    padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    margin: 0 auto;
-  }
-
-   footer {
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      margin: 30px auto 00px auto;
-
-   }
-
-  .socialmedier{
-    float: right;
-    width: 80%;
-    padding: 20px 0 0 0;
- }
-
   .footer_left,
   .footer_middle,
   .footer_right{
     width: 32%;
-
-
  }
+
  .footer_left{
    margin-right: 2%;
  }
@@ -342,30 +343,40 @@ nav.responsive input.search{
       font-size: 1.8vw;
     }
 
-
-
+/* Kasserne i footeren, nu lægger de sig under hinanden */
   .footer_left,
   .footer_middle,
   .footer_right{
     width: 100%;
+    margin: 10px 0 10px 0;
  }
 
  .footer_left{
    order: 1;
-   padding-left: 20px;
+   text-align: center;
  }
  .footer_middle{
    order: 3;
  }
+
  .footer_right{
    order: 2;
+   text-align: center;
+ }
+
+ .socialmedier{
+   margin:auto;
+ }
+
+ .social{
+   float: none;
  }
 
 }
 /* Tablet Styles slut */
 
 /* Mobile Styles */
-@media only screen and (max-width: 419px) {
+@media only screen and (max-width: 420px) {
 
   /* Skrift typer til mobile*/
     h1 {
@@ -382,6 +393,56 @@ nav.responsive input.search{
 
     p {
       font-size: 2.2vw;
+    }
+
+    .runestone {
+      display: none;
+    }
+
+    .sponsor,
+    .artikel,
+    .facebook{
+      width: 80%;
+      margin: 10px auto 10px auto;
+      min-height: auto;
+      border: hidden;
+      padding: 0 10px 0 10px;
+    }
+
+    .sponsor {
+      order: 3;
+    }
+
+    .artikel {
+      order: 1;
+    }
+
+    .facebook{
+      order: 2;
+    }
+
+    /* Kasserne i footeren, nu lægger de sig under hinanden */
+     .footer_left,
+     .footer_middle,
+     .footer_right{
+       width: 100%;
+       margin: 10px 0 10px 0;
+    }
+
+    .footer_left{
+      order: 4;
+      text-align: center;
+    }
+    .footer_middle{
+      order: 6;
+    }
+    .footer_right{
+      order: 5;
+      text-align: center;
+    }
+
+    .social{
+      float: none;
     }
 }
 /* Mobile Styles slut */
