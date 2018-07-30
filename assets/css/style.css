@@ -36,6 +36,7 @@ h2 {
 h3 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.3vw;
+  text-align: center;
 }
 
 p {
@@ -158,13 +159,23 @@ aside {
   background-clip: border-box;
 }
 
-.sponsor {
+.sidebar_a {
   background-color: #ffffff;
   margin: 40px 0 auto 0;
   width: 12%;
   min-height: 500px;
   text-align: center;
   border-right: thin inset #000099;
+}
+
+.sponsor {
+  width: 100%;
+}
+
+.sponsor img {
+  width: 80%;
+  height: auto;
+  margin-top: 10px;
 }
 
 .artikel {
@@ -175,13 +186,17 @@ aside {
   width: 50%;
   }
 
-  .facebook {
+  .sidebar_b {
     background-color: #ffffff;
     margin: 40px 0 auto 0;
     width: 12%;
     min-height: 500px;
     text-align: center;
     border-left: thin outset #000099;
+  }
+
+  .facebook {
+    width: 100%;
   }
 
 /* Footer med kontaktoplysninger, logo og socialemedier */
@@ -420,9 +435,9 @@ nav.responsive input.search{
     display: none;
   }
 
-    .sponsor,
+    .sidebar_a,
     .artikel,
-    .facebook{
+    .sidebar_b{
       width: 80%;
       margin: 10px auto 10px auto;
       min-height: auto;
@@ -430,7 +445,7 @@ nav.responsive input.search{
       padding: 0 10px 0 10px;
     }
 
-    .sponsor {
+    .sidebar_a {
       order: 3;
     }
 
@@ -438,7 +453,7 @@ nav.responsive input.search{
       order: 1;
     }
 
-    .facebook{
+    .sidebar_b{
       order: 2;
     }
 
