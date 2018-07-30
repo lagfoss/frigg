@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #990000;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Skrifttype og forskellige størrelser */
@@ -46,6 +47,15 @@ p {
 
 a {
   font-family: 'Josefin Sans', sans-serif;
+  color: #009900;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+    color: #009999;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 /* Header med logo og billede */
@@ -153,7 +163,7 @@ aside {
   margin: 40px auto 0 auto;
   padding: 0;
   width: 10%;
-  min-height: 500px;
+  min-height: 520px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -248,16 +258,20 @@ footer a{
 
 .socialmedier{
   width: 100%;
+  text-align: right;
 }
 
 /* Er blevet brugt til alle socialemedier i footer */
 .social{
   width: 17%;
-  float: right;
   height: auto;
-  margin: 0px 20px 0 0;
+  margin: 0px 0 0 20px;
+}
+
+.socialmedier a:link {
   text-decoration: none;
 }
+
 
 /* Header og nav responsive */
 @media screen and (max-width: 820px) {
@@ -387,10 +401,12 @@ nav.responsive input.search{
 
  .socialmedier{
    margin:auto;
+   text-align:center;
  }
 
  .social{
    float: none;
+   margin: 0 10px 0 10px;
  }
 
 }
@@ -439,7 +455,7 @@ nav.responsive input.search{
     .artikel,
     .sidebar_b{
       width: 80%;
-      margin: 10px auto 10px auto;
+      margin: 10px auto 0px auto;
       min-height: auto;
       border: hidden;
       padding: 0 10px 0 10px;
@@ -477,8 +493,14 @@ nav.responsive input.search{
       text-align: center;
     }
 
+    .socialmedier{
+      margin:auto;
+      text-align:center;
+    }
+
     .social{
       float: none;
+      margin: 0 10px 0 10px;
     }
 }
 /* Mobile Styles slut */
