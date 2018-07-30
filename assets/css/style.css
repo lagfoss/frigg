@@ -59,17 +59,23 @@ header {
 
 .logo {
   display: flex;
-  width: 10%;
+  width: 11%;
   height: auto;
   margin: 10px;
   z-index: 2;
 }
 
+.logo img {
+  width: 100%;
+  align-self: center;
+}
+
 .header {
   display: flex;
   height: auto;
-  width: 90%;
-  padding: 5px 0 20px 0;
+  width: 89%;
+  align-self: center;
+  padding: 5px 0 5px 0;
   z-index: 2;
 }
 
@@ -246,21 +252,6 @@ footer a{
    border: none;
  }
 
-header {
-  overflow: hidden;
-  width: 100%;
-}
-
- .logo {
-   width: 70px;
-   height: auto;
- }
-
- .header {
-   height: 70px;
-   width: auto;
- }
-
  nav input.search { display: none;}
 
  /* Burger menu bliver synlig */
@@ -343,6 +334,21 @@ nav.responsive input.search{
       font-size: 1.8vw;
     }
 
+/* Header og logo i tablet */
+    header {
+      overflow: hidden;
+      width: 100%;
+    }
+
+     .logo {
+       width: 60px;
+       height: auto;
+     }
+
+     .logo img {
+       width: 60px;
+     }
+
 /* Kasserne i footeren, nu lægger de sig under hinanden */
   .footer_left,
   .footer_middle,
@@ -395,9 +401,24 @@ nav.responsive input.search{
       font-size: 2.2vw;
     }
 
-    .runestone {
-      display: none;
+/* Header og logo i mobile */
+    header {
+      overflow: hidden;
+      width: 100%;
     }
+
+   .logo {
+     width: 50px;
+     height: auto;
+   }
+
+   .logo img {
+     width: 50px;
+    }
+
+  .runestone {
+    display: none;
+  }
 
     .sponsor,
     .artikel,
