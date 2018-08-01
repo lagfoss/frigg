@@ -42,6 +42,10 @@ h2 {
   letter-spacing: 1.2pt;
 }
 
+h2 a {
+  color: black;
+}
+
 h3 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.3vw;
@@ -202,12 +206,12 @@ aside {
   bottom: 0;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-clip: border-box;
 }
 
 .sidebar_a {
   background-color: #ffffff;
   margin: 0px 0 auto 0;
+  padding: 5px;
   width: 60%;
   min-height: 500px;
   bottom: 0;
@@ -236,6 +240,7 @@ aside {
   .sidebar_b {
     background-color: #ffffff;
     margin: 0px 0 auto 0;
+    padding: 5px;
     width: 60%;
     min-height: 500px;
     bottom: 0;
