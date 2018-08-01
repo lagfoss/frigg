@@ -1,6 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  background-color: #990000;
+  background-image: url(../images/odin-frigg-lorenz-frolich.jpg); /* The god Odin and his wife, the goddess Frigg, from the beginning of the poem Vafþrúðnismál (1895) by Lorenz Frølich */
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  background-color: rgba(153, 0, 0, 0.9);
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -153,17 +161,39 @@ input.search {
     width: 100%;
   }
 
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+  .column {
+    float: left;
+    margin-top: 40px;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+  background-color: #ffffff;
+  min-height: 500px;
+}
+
 aside {
+  float: left;
   display: flex;
   flex-wrap: wrap;
 }
 
 .runestone {
   background-image: url("../images/runesten.png");
-  margin: 40px auto 0 auto;
-  padding: 0;
-  width: 10%;
-  min-height: 520px;
+  margin: 0px auto 0 auto;
+  width: 50%;
+  min-height: 500px;
+  bottom: 0;
   background-size: 100%;
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -171,11 +201,13 @@ aside {
 
 .sidebar_a {
   background-color: #ffffff;
-  margin: 40px 0 auto 0;
-  width: 12%;
+  margin: 0px 0 auto 0;
+  width: 50%;
   min-height: 500px;
+  bottom: 0;
   text-align: center;
   border-right: thin inset #000099;
+  border-radius: 5px 0 0 5px;
 }
 
 .sponsor {
@@ -189,20 +221,21 @@ aside {
 }
 
 .artikel {
-  margin: 40px 0 auto 0;
-  padding: 0 10px 0 10px;
-  min-height: 500px;
+  margin: 0px 0 auto 0;
+  padding: 10px 10px 0 10px;
   background-color: #ffffff;
-  width: 50%;
+  width: 100%;
   }
 
   .sidebar_b {
     background-color: #ffffff;
-    margin: 40px 0 auto 0;
-    width: 12%;
+    margin: 0px 0 auto 0;
+    width: 50%;
     min-height: 500px;
+    bottom: 0;
     text-align: center;
     border-left: thin outset #000099;
+    border-radius: 0 5px 5px 0;
   }
 
   .facebook {
@@ -212,6 +245,7 @@ aside {
 /* Footer med kontaktoplysninger, logo og socialemedier */
 
 footer {
+  background-color: #990000;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 14px;
   letter-spacing: 1.3pt;
@@ -221,6 +255,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  min-height: 235px;
   margin: 10px auto 0px auto;
   border: hidden;
   box-shadow:0px -2px 4px #000099;
