@@ -161,6 +161,11 @@ input.search {
     width: 100%;
   }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
   .row::after {
       content: "";
       clear: both;
@@ -178,20 +183,21 @@ input.search {
 
 .middle {
   width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   background-color: #ffffff;
   min-height: 500px;
 }
 
 aside {
   float: left;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .runestone {
   background-image: url("../images/runesten.png");
   margin: 0px auto 0 auto;
-  width: 50%;
+  width: 40%;
   min-height: 500px;
   bottom: 0;
   background-size: 100%;
@@ -202,7 +208,7 @@ aside {
 .sidebar_a {
   background-color: #ffffff;
   margin: 0px 0 auto 0;
-  width: 50%;
+  width: 60%;
   min-height: 500px;
   bottom: 0;
   text-align: center;
@@ -230,7 +236,7 @@ aside {
   .sidebar_b {
     background-color: #ffffff;
     margin: 0px 0 auto 0;
-    width: 50%;
+    width: 60%;
     min-height: 500px;
     bottom: 0;
     text-align: center;
@@ -482,6 +488,20 @@ nav.responsive input.search{
      width: 50px;
     }
 
+.column {
+  float:none;
+}
+
+.left, .right {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+.middle {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
   .runestone {
     display: none;
   }
@@ -489,22 +509,24 @@ nav.responsive input.search{
     .sidebar_a,
     .artikel,
     .sidebar_b{
-      width: 80%;
+      width: 100%;
       margin: 10px auto 0px auto;
       min-height: auto;
       border: hidden;
       padding: 0 10px 0 10px;
+      border-radius: 0;
     }
 
-    .sidebar_a {
+    .left {
       order: 3;
     }
 
-    .artikel {
+    .middle {
       order: 1;
+      margin-top: 20px;
     }
 
-    .sidebar_b{
+    .right {
       order: 2;
     }
 
